@@ -1,48 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Netflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
-        <button id="theme-toggle" onclick="toggleTheme()" style="position:absolute;top:1rem;right:1rem;z-index:10;background:none;border:none;font-size:2rem;cursor:pointer" aria-label="Alternar tema"></button>
+    <main class="conteudo-principal">
         <h1>Quem está assistindo?</h1>
-        <section aria-label="Perfis disponíveis">
-            <nav class="profiles">
-                <ul>
-                    <li>
-                        <a href="#" class="profile">
-                            <figure>
-                                <img src="/assets/perfil-1.jpg" alt="Perfil 1">
-                                <figcaption>User 1</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="profile">
-                            <figure>
-                                <img src="/assets/perfil-2.jpg" alt="Perfil 2">
-                                <figcaption>User 2</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="profile">
-                            <figure>
-                                <img src="/assets/perfil-3.png" alt="Perfil 3">
-                                <figcaption>User 3</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <ul class="lista-perfis">
+            <!-- perfil 1 -->
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/perfil-1.jpeg" alt="Perfil de Pedro" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Pedro</figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <!-- perfil 2 -->
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/perfil-2.jpeg" alt="Perfil de Júlia" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Júlia</figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <!-- perfil 3 -->
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/perfil-3.jpeg" alt="Perfil de Davi" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Davi</figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+
+
+        <section class="gerenciar">
+            <button type="button" class="botao-gerenciar">Gerenciar perfis</button>
         </section>
+
     </main>
 
-    <script src="theme.js"></script>
-    
+    <script src="js/index.js"></script>
 </body>
+
 </html>
