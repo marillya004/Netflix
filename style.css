@@ -1,13 +1,14 @@
 body { /* Define estilos para o elemento body da página */
-    background-color: #141414; /* Define a cor de fundo do corpo da página como preto escuro */
+    background: linear-gradient(180deg, #5a0000 0%, #500101 25%, #000 60%, #000000 100%);
     color: #fff; /* Define a cor do texto como branco */
     margin: 0; /* Remove todas as margens externas */
     display: flex; /* Usa flexbox para layout */
     align-items: center; /* Centraliza itens verticalmente */
     justify-content: center; /* Centraliza itens horizontalmente */
-    height: 100vh; /* Define a altura como 100% da altura da viewport */
+    min-height: 100vh; /* Define a altura como 100% da altura da viewport */
     font-family: 'Geist', sans-serif; /* Define a família de fontes */
 }
+
 
 .conteudo-principal { /* Define estilos para o conteúdo principal */
     text-align: center; /* Alinha o texto ao centro */
